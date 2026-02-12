@@ -79,15 +79,20 @@ function drag(ev) {
 
 function drop(ev) {
     ev.preventDefault();
+    ev.stopPropagation();
+    
     const id = Number(ev.dataTransfer.getData("text/plain") || ev.dataTransfer.getData("text"));
-    const columnEl = ev.target.closest(".column");
+    if (!id) return;
+    
+    // Find the closest .column, even if dropping on h2 or nested element
+    let columnEl = ev.target.closest(".column");
     if (!columnEl) return;
+    
     const column = columnEl.id;
-
     const task = tasks.find(t => t.id === id);
     if (!task) return;
+    
     task.status = column;
-
     saveTasks();
     renderTasks();
 }
