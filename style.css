@@ -46,6 +46,12 @@ p{
             padding: 20px;
             background: #f4f4f4;
       }
+      .column {
+            background: #e2dcdc;
+            padding: 10px;
+            border-radius: 50px;
+            width: 30%;
+        }
         h2 {
             text-align: center;
         }
