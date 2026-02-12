@@ -32,3 +32,66 @@
   margin-top: 1rem;
   color: red;
 }
+h1{
+  text-align: center;
+}
+p{
+  text-align: center;
+  padding: 70px;
+}
+ body {
+            font-family: Arial;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .column {
+            background: black;
+            padding: 15px;
+            width: 30%;
+            border-radius: 8px;
+            min-height: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .task {
+            background: #704343;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            cursor: grab;
+        }
+
+        .task small {
+            display: block;
+            color: #792222;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            margin-top: 5px;
+        }
+
+        button {
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        #inputSection {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            background: white;
+            padding: 10px;
+            border-radius: 80px;
+            
+        }
+
+        input {
+            margin-right: 5px;
+        }
