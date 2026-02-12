@@ -25,3 +25,6 @@ The progress section updates automatically.
 ## Known Issues
 Task are only saved in localstorage and are not shared across devices
 
+AUTHORS
+# FAVOUR KIREMA
+# NIMROD MATI
