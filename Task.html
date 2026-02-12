@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task Management</h1>
+    <p>Welcome to the Task Management page. Here you can create, view, and manage your study tasks effectively.</p>
+    
+<div id="inputSection">
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <input type="date" id="dueDate">
+    <button type="button" onclick="addTask()">Add Task</button>
+</div>
+
+<div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>To do</h2>
+</div>
+
+<div class="column" id="progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>In Progress</h2>
+</div>
+
+<div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>Finished</h2>
+</div>
+    <script src="script.js"></script>
+       
+</body>
+</html>
